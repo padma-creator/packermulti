@@ -1,5 +1,5 @@
-access_key = "AKIA22GOLCJYP4LBFU5I"
-secret_key = "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"
+access_key = ""
+secret_key = ""
 region = "us-east-2"
 linux_ami_name = "packer-amitest-linux"
 ubuntu_ami_name = "packer-amitest-ubuntu"
