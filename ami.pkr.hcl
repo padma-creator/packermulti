@@ -87,16 +87,18 @@ build {
     only = ["amazon-ebs.linux_ami"]
 
     inline = [
-      "cd /tmp",
-      "touch lfile1 lfile2 lfile3",
+      "sleep 30",
+      "sudo yum update -y",
+      "sudo yum install -y java-1.8.0"
     ]
   }
   provisioner "shell" {
     # This provisioner only runs for the 'ubuntu_ami' source.
     only = ["amazon-ebs.ubuntu_ami"]
     inline = [
-        "cd /tmp",
-        "touch ufile1 ufile2 ufile3",
+      "sleep 30",
+      "sudo apt-get update -y",
+      "sudo apt install default-jre -y"
       ]
   }
 }
